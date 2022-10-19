@@ -1,0 +1,2 @@
+17:26;data;{'famaly': 'dfaf', 'telephone': '13435', 'own': 2, 'gender': 1, 'stàtus': 2}
+17:28;data;{'famaly': '4645', 'telephone': '568546546', 'own': 1, 'gender': 2, 'status': 3}
