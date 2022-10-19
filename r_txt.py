@@ -10,7 +10,7 @@ def write_txt(dic):
     # print('data: {}, {}\n'
     #         .format(time, ', '.join('{}: {}'.format(key, val) for key, val in dic.items())))
     with open('t_book.txt', 'a', encoding = 'UTF_8') as file:
-        file.write('data: {}, {}\n'
+        file.write('data: {}. {}\n'
             .format(time, ', '.join('{}: {}'.format(key, val) for key, val in dic.items())))
 
 def finding_own(owns):
@@ -23,6 +23,6 @@ def finding_gender(gender):
     elif gender == 2: return 'Женский'
     
 def finding_status(status):
-    if status == 1: return 'Женат\Замужем'
+    if status == 1: return 'Женат\\Замужем'
     elif status == 2: return 'Холост'
     else: return 'В разводе'    
