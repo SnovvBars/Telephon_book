@@ -9,7 +9,11 @@ def button_click():
         item = UI.data_input()
         r_txt.write_txt(item)
     elif item == 2:
-        item = search.data_search('family')
+        item = search.data_fam()
+    elif item == 3:
+        item = search.data_all()
+    elif item == 4:
+        item = search.data_search()    
     # else : print(item)
 
     # print(item) 

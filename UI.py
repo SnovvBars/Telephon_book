@@ -1,4 +1,5 @@
 # Пункты меню
+from datetime import datetime as dt
 
 def select_main_item():
     return int(input('''
@@ -16,8 +17,10 @@ def select_main_item():
  Ваш выбор (1 - 7): '''))
 
 def data_input():
+    # print(type(dt.now().strftime('%f')))
     print('\n Будем вводить данные абонента.')
-    d = {'famaly' : input('\n Введите ФИО в формате \'Фамилия Имя Отчество\': ')}
+    d = {'id' : int(dt.now().strftime('%f')) // 1000}   
+    d['famaly'] = input('\n Введите ФИО в формате \'Фамилия Имя Отчество\': ')
     d['telephone'] = input('\n Введите телефон в формате \'+1(234)567-89-12\': ')
     d['own'] = int(input('''
  Статус номера:

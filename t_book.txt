@@ -1,3 +1,3 @@
-data: 10/19/22:21:54. famaly: nljk, telephone: 1234, own: Личный, gender: Женский, status: В разводе
-data: 10/19/22:21:54. famaly: bkbkjb, telephone: 1234, own: Домашний, gender: Женский, status: Женат\Замужем
-data: 10/19/22:21:55. famaly: cvxcg, telephone: 456, own: Рабочий, gender: None, status: Женат\Замужем
+id: 244, famaly: dfsfg, telephone: 324, own: Рабочий, gender: ж, status: Холост
+id: 262, famaly: sdadf, telephone: 3455, own: Рабочий, gender: ж, status: Холост
+id: 846, famaly: dfsg, telephone: 43425, own: Личный, gender: м, status: Женат\Замужем
