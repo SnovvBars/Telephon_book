@@ -38,4 +38,16 @@ def del_person(num):
     else: print("File doesn't exists!")
 
     os.rename('t_book.tmp', 't_book.txt')
-    print(" Сделано!")
+    print(" Сделано!\n")
+
+def del_all():
+    if os.path.isfile('t_book.tmp'):
+        os.remove('t_book.tmp')
+    if input('\n Вы уверены? Откат будет невозможен!!! (y/n): ') == 'y':
+        if os.path.isfile('t_book.txt'):
+            os.remove('t_book.txt')
+        else: print("File doesn't exists!")
+        
+        f = open("t_book.txt", 'w', encoding="utf-8")
+        f.close()
+        print(" Сделано!\n")

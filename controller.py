@@ -7,7 +7,6 @@ import remove as rem
 
 def button_click():
     item = UI.select_main_item()
-    # print(item)
     if item == 1:
         item = UI.data_input()
         r_txt.write_txt(item)
@@ -19,9 +18,10 @@ def button_click():
         item = search.data_search()    
     elif item == 5:
         item = rem.data_delete()    
+    elif item == 6:
+        item = rem.del_all()    
+    elif item == 7:
+        print("\n Good bye!!!\n")
+        exit()    
 
-    # else : print(item)
-
-    # print(item) 
-
-button_click()
+# button_click()
