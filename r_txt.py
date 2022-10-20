@@ -1,5 +1,6 @@
 import r_html
 
+# Заменяем цифры нв значения, записываем в файл txt, на его основе генерим html
 def write_txt(dic):
     for key, value in dic.items():
         if key == 'own' : dic[key] = finding_own(value)

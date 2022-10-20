@@ -1,6 +1,7 @@
 import os
 import r_html
 
+# Сначала ищем абонента по фамилии, показываем совпадения, предлагаем выбрать ID удаляемого
 def data_delete():
     elem = str(input('''
      Кого будем удалять?
@@ -22,6 +23,7 @@ def data_delete():
         nun_del = input('\n Выберите id удаляемого: ')
         del_person(nun_del)
 
+# Удаляем выбранного абонента
 def del_person(num):
     if os.path.isfile('t_book.tmp'):
         os.remove('t_book.tmp')
@@ -34,6 +36,7 @@ def del_person(num):
                 fp_tmp.close()
     fp.close()
 
+# Перезаписываем построчно тектовый файл в .tmp, потом заменяем им текстовый
     if os.path.isfile('t_book.txt'):
         os.remove('t_book.txt')
     else: print("File doesn't exists!")
@@ -42,6 +45,7 @@ def del_person(num):
     r_html.save_html()
     print(" Сделано!\n")
 
+# очистка БД телефонов
 def del_all():
     if os.path.isfile('t_book.tmp'):
         os.remove('t_book.tmp')

@@ -1,4 +1,4 @@
-# Пункты меню
+# Пункты меню главного и для ввода данных
 from datetime import datetime as dt
 
 def select_main_item():

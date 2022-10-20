@@ -1,5 +1,6 @@
 import os
 
+# формируем шапку таблицы
 def save_html():    
     str_html = '<html><body><table border = 1><tr><td>ID</td><td>ФИО</td><td>Телефон</td><td>Комм</td><td>Пол</td><td>Статус</td></tr><tr>'
     with open('t_book.txt', 'r', encoding="utf-8") as fp:
@@ -9,12 +10,14 @@ def save_html():
     str_html = str_html + '</tr></table></body></html>'
     save_file_html(str_html)
 
+# формируем строки таблицы
 def form_line(line):
     str = '<tr>'
     for key in line:
         str = str + '<td>' + line[key] + '</td>'
     return str + '</tr>'
 
+# перезаписываем htnl файл на основе файла t_book.txt
 def save_file_html(html_str):
     if os.path.isfile('t_book.html'):
         os.remove('t_book.html')
