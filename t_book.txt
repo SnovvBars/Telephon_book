@@ -1,3 +1,8 @@
-id: 244, famaly: dfsfg, telephone: 324, own: Рабочий, gender: ж, status: Холост
-id: 262, famaly: sdadf, telephone: 3455, own: Рабочий, gender: ж, status: Холост
-id: 846, famaly: dfsg, telephone: 43425, own: Личный, gender: м, status: Женат\Замужем
+id: 597, famaly: Петров С. Д., telephone: +1(916)234-56-40, own: Рабочий, gender: м, status: Холост
+id: 366, famaly: Сидоров В. П., telephone: +1(900)200-54-40, own: Домашний, gender: м, status: Женат\Замужем
+id: 925, famaly: Майорова М. Е., telephone: +1(956)204-54-40, own: Личный, gender: ж, status: Холост
+id: 687, famaly: Иванов И. И., telephone: +3(345)324-43-55, own: Личный, gender: ж, status: В разводе
+id: 597, famaly: Петров С. Д., telephone: +1(916)234-56-40, own: Рабочий, gender: м, status: Холост
+id: 366, famaly: Сидоров В. П., telephone: +1(900)200-54-40, own: Домашний, gender: м, status: Женат\Замужем
+id: 925, famaly: Майорова М. Е., telephone: +1(956)204-54-40, own: Личный, gender: ж, status: Холост
+id: 687, famaly: Иванов И. И., telephone: +3(345)324-43-55, own: Личный, gender: ж, status: В разводе
