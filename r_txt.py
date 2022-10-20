@@ -1,5 +1,5 @@
 # from datetime import datetime as dt
-# import r_html as r_html
+import r_html as r_html
 
 def write_txt(dic):
     # time = dt.now().strftime('%D:%H:%M')
@@ -13,7 +13,7 @@ def write_txt(dic):
         file.write('{}\n'
             .format(', '.join('{}: {}'.format(key, val) for key, val in dic.items())))
     file.close()
-    # r_html.save_html()
+    r_html.save_html()
 
 def finding_own(owns):
     if owns == 1: return 'Личный'

@@ -1,4 +1,5 @@
 import os
+import r_html
 
 def data_delete():
     elem = str(input('''
@@ -38,6 +39,7 @@ def del_person(num):
     else: print("File doesn't exists!")
 
     os.rename('t_book.tmp', 't_book.txt')
+    r_html.save_html()
     print(" Сделано!\n")
 
 def del_all():
@@ -50,4 +52,5 @@ def del_all():
         
         f = open("t_book.txt", 'w', encoding="utf-8")
         f.close()
+        r_html.save_html()
         print(" Сделано!\n")
