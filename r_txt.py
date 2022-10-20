@@ -1,14 +1,10 @@
-# from datetime import datetime as dt
-import r_html as r_html
+import r_html
 
 def write_txt(dic):
-    # time = dt.now().strftime('%D:%H:%M')
     for key, value in dic.items():
         if key == 'own' : dic[key] = finding_own(value)
         elif key == 'gender' : dic[key] = finding_gender(value)
         elif key == 'status' : dic[key] = finding_status(value)
-    # print('data: {}, {}\n'
-    #         .format(time, ', '.join('{}: {}'.format(key, val) for key, val in dic.items())))
     with open('t_book.txt', 'a', encoding = 'UTF_8') as file:
         file.write('{}\n'
             .format(', '.join('{}: {}'.format(key, val) for key, val in dic.items())))

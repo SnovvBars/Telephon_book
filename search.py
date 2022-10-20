@@ -1,3 +1,5 @@
+import os
+
 def data_search():
     elem = str(input('\n Введите часть фамилии или фамилию целиком: '))
     print ('')
@@ -13,3 +15,4 @@ def data_search():
                         .format(count, dic['famaly'], dic['telephone'], dic['own'], dic['gender'], dic['status']))            
             if count == 0 : print(" Не найдено!")
     print ('')
+    os.system("pause")

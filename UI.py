@@ -17,7 +17,6 @@ def select_main_item():
  Ваш выбор (1 - 7): '''))
 
 def data_input():
-    # print(type(dt.now().strftime('%f')))
     print('\n Будем вводить данные абонента.')
     d = {'id' : int(dt.now().strftime('%f')) // 1000}   
     d['famaly'] = input('\n Введите ФИО в формате \'Фамилия Имя Отчество\': ')
@@ -41,7 +40,4 @@ def data_input():
    2 - Холост
    3 - В разводе
  (1 - 3): ''')) 
-    # print ('\n',  d)
     return d
-
-# data_input()

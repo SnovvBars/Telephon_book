@@ -1,7 +1,7 @@
-import UI as UI
-import r_txt as r_txt
+import UI
+import r_txt
 import print as data_print
-import search as search
+import search
 import remove as rem
 
 
@@ -22,6 +22,4 @@ def button_click():
         item = rem.del_all()    
     elif item == 7:
         print("\n Good bye!!!\n")
-        exit()    
-
-# button_click()
+        exit()

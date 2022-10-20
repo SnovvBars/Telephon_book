@@ -1,3 +1,5 @@
+import os
+
 def data_fam():    
     print ('')
     count = 0
@@ -8,6 +10,7 @@ def data_fam():
             print(" {}. ФИО: {}".format(count, dic['famaly']))
     if count == 0: print(" Никого нет!")
     print ('')
+    os.system("pause")
 
 def data_all():    
     print ('')
@@ -20,3 +23,4 @@ def data_all():
                     .format(count, dic['famaly'], dic['telephone'], dic['own'], dic['gender'], dic['status']))            
     if count == 0: print(" Никого нет!")
     print ('')
+    os.system("pause")
